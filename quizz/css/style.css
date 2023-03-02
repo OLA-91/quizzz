@@ -1,0 +1,339 @@
+* {
+    margin: auto;
+    padding: 0;
+}
+
+html,
+body {
+
+    font: 30px Georgia, serif;
+    width: 100%;
+    height: 99%;
+}
+
+/* ************************|********|************************** */
+/*                         | HEADER |                           */
+/* ************************V********V************************** */
+.grandTitre {
+    border-bottom: 2px solid rgb(244, 70, 70);
+    background-color: rgb(66, 3, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+
+}
+
+.logo {
+    border: 2px solid rgb(66, 3, 54);
+    border-radius: 30%;
+    max-width: 100px;
+    max-height: 100px;
+
+
+}
+
+img {
+    max-width: 100%;
+    border-radius: 20px;
+
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre h1 {
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-size: 40px
+}
+
+/* POINT DESCLAMATION GAUCHE */
+.titre .inclineGauche {
+    margin-right: 20px;
+    font-size: 50px;
+    rotate: -40deg;
+}
+
+/* POINT DESCLAMATION DROITE */
+.titre .inclineDroite {
+    margin-left: 20px;
+    font-size: 50px;
+    rotate: 30deg;
+}
+
+.utilisateur {
+    border: 2px solid rgb(244, 70, 70);
+    border-radius: 20%;
+    padding: 10px;
+    width: max-content;
+    display: flex;
+}
+
+.utilisateur p {
+    margin: 5px;
+}
+
+/* ************************|******|************************** */
+/*                         | BODY |                           */
+/* ************************V******V************************** */
+
+/* ************************ CONNECTION ************************** */
+.pageConnection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    min-height: 85%;
+}
+
+.connection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 5px 5px 5px 1px rgb(137, 78, 78);
+    margin: 10px;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+    border: solid 1px rgb(66, 2, 2);
+    text-align: center;
+}
+
+.connection table tr td {
+    width: max-content;
+    text-align: center;
+    padding: 5px;
+    filter: drop-shadow(0 0 0.20rem rgb(65, 19, 28));
+
+}
+
+.connection .btnConnection {
+    background-color: rgb(244, 70, 70);
+    border: 1px solid rgb(0, 153, 255);
+    border-radius: 10px;
+    padding: 5px;
+    filter: drop-shadow(0 0 0.10rem rgb(65, 19, 28));
+    transition: 1s;
+}
+
+.connection .btnInscription {
+    background-color: rgb(0, 153, 255);
+    border: 1px solid rgb(244, 70, 70);
+    border-radius: 10px;
+    padding: 5px;
+    filter: drop-shadow(0 0 0.10rem rgb(65, 19, 28));
+    transition: 1s;
+}
+
+.connection .btnConnection:hover,
+.btnInscription:hover {
+    scale: 1.1;
+}
+
+/* ************************ INSCRITPTION ************************** */
+.pageFormulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    min-height: 85%;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px 100px 100px 100px;
+    box-shadow: 5px 5px 5px 1px rgb(137, 78, 78);
+    margin: 10px;
+    padding: 20px;
+    height: 300px;
+    filter: drop-shadow(0 0 0.75rem rgb(201, 154, 164));
+    width: 400px;
+    border: solid 1px rgb(53, 4, 4);
+
+}
+
+.formulaire table tr td {
+    width: max-content;
+    text-align: center;
+    padding: 5px;
+}
+
+.formulaire .btnInscription {
+    background-color: rgb(0, 166, 255);
+    border: 1px solid orange;
+    border-radius: 10px;
+    padding: 5px;
+    transition: 1s;
+}
+
+.formulaire .btnInscription:hover {
+    scale: 1.1;
+}
+
+/* ************************ QUIZZ ************************** */
+.pageResulta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    min-height: 20%;
+}
+
+.afficheResulta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 1px rgb(137, 78, 78);
+    margin: 10px;
+    padding: 40px;
+    height: max-content;
+    width: max-content;
+    border: solid 1px rgb(53, 4, 4);
+    border-radius: 100px 100px 100px 100px;
+    text-align: center;
+}
+
+.pageQuizz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    min-height: 50%;
+}
+
+.quizz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 1px rgb(137, 78, 78);
+    margin: 10px;
+    padding: 40px;
+    border: solid 1px rgb(53, 4, 4);
+    height: max-content;
+    width: max-content;
+    border-radius: 100px 100px 100px 100px;
+}
+
+.pageQuizz table tr td {
+    width: max-content;
+    padding: 8px;
+}
+
+.question {
+
+    padding-top: 2px;
+    border-radius: 0 30px 30px 0;
+    margin: 20px;
+    box-shadow: 5px 5px 5px 1px rgb(137, 78, 78);
+
+}
+
+.pageQuizz .tdmarg {
+    text-align: end;
+}
+
+.btnValide {
+    text-align: end;
+    background-color: rgb(0, 153, 255);
+    border: 1px solid rgb(244, 70, 70);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 1px rgb(137, 78, 78);
+    transition: 1s;
+}
+
+.btnSuivant {
+    text-align: end;
+    background-color: rgb(244, 70, 70);
+    border: 1px solid rgb(0, 153, 255);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px 1px rgb(137, 78, 78);
+    transition: 1s;
+}
+
+.btnValide:hover {
+    scale: 1.1;
+}
+
+.btnSuivant:hover {
+    scale: 1.1;
+}
+
+/* ************************ SCORE ************************** */
+
+.pageScore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 95%;
+    min-height: 85%;
+}
+
+.classment {
+    border-radius: 40px;
+    box-shadow: 5px 5px 5px 1px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    height: max-content;
+    width: max-content;
+}
+
+.classment table th {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+.classment table th td {
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 8px;
+}
+
+
+/* ************************|********|************************** */
+/*                         | FOOTER |                           */
+/* ************************V********V************************** */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.createur {
+    border-top: 2px solid rgb(244, 70, 70);
+    border-left: 1px dashed rgb(244, 70, 70);
+    border-right: 1px dashed rgb(244, 70, 70);
+    background-color: rgb(66, 3, 54);
+    text-align: center;
+    width: 100%;
+    color: aliceblue;
+    padding: 10px;
+
+}
